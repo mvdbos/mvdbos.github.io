@@ -1,0 +1,12 @@
+<!--
+    Average reading speed for non-fiction English is 238 words per minute according to the scientific article
+    "How many words do we read per minute? A review and meta-analysis of reading rate, Science Direct, 2019-12-10"
+    published in Journal of Memory and Language (https://www.sciencedirect.com/science/article/abs/pii/S0749596X19300786)
+-->
+{% assign duration = include.content | number_of_words| divided_by:238.0 | ceil %}
+<!--{% if duration == 1  %}-->
+<!--  {{ duration }} min-->
+<!--{% else %}-->
+<!--  {{ duration }} mins-->
+<!--{% endif %}-->
+{{ duration }} min read

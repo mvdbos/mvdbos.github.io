@@ -8,6 +8,7 @@
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
+excerpt_truncate_length: 300
 
 # Build settings
 remote_theme: jekyll/minima
@@ -17,7 +18,11 @@ minima:
     - { platform: github,  user_url: "https://github.com/mvdbos" }
     - { platform: linkedin,  user_url: "https://www.linkedin.com/in/matthijsvdbos/" }
     - { platform: keybase,  user_url: "https://keybase.io/mvdbos" }
+
 show_excerpts: true
+# Excerpts are the first paragraph, unless the excerpt_separator is set.
+# Note that if it is set, it is always required, otherwise full posts will be shown for excerpts.
+excerpt_separator: <!--more-->
 
 # Exclude from processing.
 # The following items will not be processed, by default.
