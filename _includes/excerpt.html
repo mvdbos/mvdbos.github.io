@@ -1,0 +1,12 @@
+<!--
+    If there is an excerpt that is shorter than the full post, i.e. the excerpt_separator is explicitly set,
+    then we render the excerpt followed by an ellipsis.
+    Otherwise, we simply truncate the full post at site.excerpt_truncate_length.
+-->
+{% if include.post.excerpt.size < include.post.content.size %}
+    {% assign stripped_excerpt = include.post.excerpt | strip_html| strip %}
+    {% assign truncate_length = stripped_excerpt.size | minus: 2 %}
+    {{ stripped_excerpt | slice: 0, truncate_length | append: "&hellip;" | markdownify  }}
+{% else %}
+    {{ include.post.content | strip_html | truncate: site.excerpt_truncate_length | markdownify }}
+{% endif %}
