@@ -30,5 +30,5 @@ Direct participants to a transaction will always have access to all its private 
 
 To dive right in and get started, check the [Getting Started](https://github.com/ing-bank/zkflow#getting-started) section of the README.
 
-For theoretical details about the ZKFlow protocol, check out the [ZKFlow white paper](https://github.com/ing-bank/zkflow/blob/master/docs/ZKFlow_whitepaper.pdf). A version of this whitepaper was presented by Gamze Tillem at CoDecFin in 2022. 
+For theoretical details about the ZKFlow protocol, check out the [ZKFlow white paper](https://github.com/ing-bank/zkflow/raw/master/docs/ZKFlow_whitepaper.pdf). A version of this whitepaper was presented by Gamze Tillem at CoDecFin in 2022. 
 
